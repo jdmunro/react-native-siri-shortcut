@@ -1,5 +1,5 @@
 {
-  "name": "react-native-siri-shortcut",
+  "name": "@happyaccident/react-native-siri-shortcut",
   "title": "React Native Siri Shortcut",
   "version": "1.9.2",
   "description": "A React Native library that enables you to use iOS 12+ Siri Shortcuts.",

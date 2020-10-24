@@ -42,7 +42,9 @@ open class ShortcutsModule: RCTEventEmitter, INUIAddVoiceShortcutViewControllerD
         
         super.init()
         
-        syncVoiceShortcuts()
+        // This causes the app loading to block for about 1000ms
+        // so it's temporarily disabled for now
+        // syncVoiceShortcuts()
         
         NotificationCenter.default.addObserver(
             self,
@@ -325,7 +327,7 @@ open class ShortcutsModule: RCTEventEmitter, INUIAddVoiceShortcutViewControllerD
     }
 
     @objc func appMovedToForeground() {
-        syncVoiceShortcuts()
+        // syncVoiceShortcuts()
     }
     
     // become current
